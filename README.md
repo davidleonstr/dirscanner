@@ -22,7 +22,7 @@ A CLI utility written in Python designed to scan directories, filter files based
 ## Installation as library
 
 ```bash
-pip install git+https://github.com/davidleonstr/rpack.git
+pip install git+https://github.com/davidleonstr/dirscanner.git
 ```
 
 ## Usage as library
