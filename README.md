@@ -1,7 +1,7 @@
 # DirScanner
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
 A CLI utility written in Python designed to scan directories, filter files based on glob patterns, and aggregate their content into a structured JSON format. This tool is optimized for generating code contexts, performing project audits, or creating structured backups of text-based assets.
 
@@ -15,7 +15,7 @@ A CLI utility written in Python designed to scan directories, filter files based
 
 ## Installation
 
-1. Ensure **Python 3.6** or higher is installed on your system.
+1. Ensure **Python 3.9** or higher is installed on your system.
 2. Clone or download the project source code.
 3. **No Dependencies:** This project relies exclusively on the Python Standard Library. No external packages are required.
 
