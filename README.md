@@ -19,12 +19,26 @@ A CLI utility written in Python designed to scan directories, filter files based
 2. Clone or download the project source code.
 3. **No Dependencies:** This project relies exclusively on the Python Standard Library. No external packages are required.
 
+## Installation as library
+
+```bash
+pip install git+https://github.com/davidleonstr/rpack.git
+```
+
 ## Usage
 
 The basic command structure is:
 
 ```bash
 python main.py <directory> [options]
+```
+
+## Usage as library
+
+The basic command structure as main:
+
+```bash
+python -m dirscanner <directory> [options]
 ```
 
 ### Examples
