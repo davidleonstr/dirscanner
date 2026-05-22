@@ -25,20 +25,20 @@ A CLI utility written in Python designed to scan directories, filter files based
 pip install git+https://github.com/davidleonstr/rpack.git
 ```
 
-## Usage
-
-The basic command structure is:
-
-```bash
-python main.py <directory> [options]
-```
-
 ## Usage as library
 
 The basic command structure as main:
 
 ```bash
 python -m dirscanner <directory> [options]
+```
+
+## Usage
+
+The basic command structure is:
+
+```bash
+python main.py <directory> [options]
 ```
 
 ### Examples
