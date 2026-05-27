@@ -5,20 +5,20 @@ import sys
 # Directory scanner from core
 from dirscanner.core import DirectoryScanner, InputFile
 
-parser = argparse.ArgumentParser(description='Scan a directory and generate a JSON with filtered content.')
+def main():
+    parser = argparse.ArgumentParser(description='Scan a directory and generate a JSON with filtered content.')
     
-# Input/Output arguments
-parser.add_argument('directory', help='Base directory to scan')
-parser.add_argument('--output', '-o', help='Destination JSON file')
-parser.add_argument('--stdin', action='store_true', help='Print JSON to terminal')
+    # Input/Output arguments
+    parser.add_argument('directory', help='Base directory to scan')
+    parser.add_argument('--output', '-o', help='Destination JSON file')
+    parser.add_argument('--stdin', action='store_true', help='Print JSON to terminal')
     
-# Pattern management arguments
-parser.add_argument('--patterns', '-p', nargs='+', help='Direct inclusion patterns (e.g., *.py)')
-parser.add_argument('--input', '-i', help='File containing inclusion patterns (gitignore style)')
+    # Pattern management arguments
+    parser.add_argument('--patterns', '-p', nargs='+', help='Direct inclusion patterns (e.g., *.py)')
+    parser.add_argument('--input', '-i', help='File containing inclusion patterns (gitignore style)')
 
-args = parser.parse_args()
-
-def main(args):
+    args = parser.parse_args()
+    
     # Consolidate all patterns from CLI and input file
     allPatterns = args.patterns if args.patterns else []
     
@@ -44,4 +44,4 @@ def main(args):
 
 # Entry point
 if __name__ == '__main__':
-    main(args)
+    main()

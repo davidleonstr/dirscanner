@@ -7,6 +7,11 @@ setup(
     install_requires=[
         'setuptools'
     ],
+    entry_points={
+        'console_scripts': [
+            'dirscanner=dirscanner.__main__:main',
+        ],
+    },
     description='A document scanner based on "Unix filename pattern matching" that reads the contents of documents and sorts them into JSON format.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
